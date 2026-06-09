@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Jackson Kesecker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --crimson:    #690a2b;
+      --crimson-lt: #8b1038;
+      --ink:        #1a1410;
+      --stone:      #4a4240;
+      --ash:        #9a918e;
+      --cream:      #faf8f5;
+      --warm-white: #ffffff;
+      --rule:       #e8e2dc;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 1.75;
+      color: var(--ink);
+      background: var(--cream);
+    }
+
+    header {
+      background: var(--crimson);
+      padding: 48px 40px 40px;
+      position: relative;
+      overflow: hidden;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #a01040 0%, #690a2b 50%, #4a0620 100%);
+    }
+    .header-eyebrow {
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.55);
+      margin-bottom: 12px;
+    }
+    header h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 500;
+      font-size: clamp(28px, 5vw, 42px);
+      line-height: 1.1;
+      color: #fff;
+      letter-spacing: -0.01em;
+    }
+    .header-meta {
+      margin-top: 16px;
+      font-size: 12px;
+      color: rgba(255,255,255,0.5);
+      letter-spacing: 0.04em;
+    }
+
+    .page-shell {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+
+    .toc {
+      margin: 44px 0 0;
+      padding: 28px 32px;
+      background: var(--warm-white);
+      border-left: 3px solid var(--crimson);
+      border-radius: 0 6px 6px 0;
+    }
+    .toc-label {
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ash);
+      margin-bottom: 14px;
+    }
+    .toc ol { padding-left: 18px; }
+    .toc li { margin-bottom: 6px; }
+    .toc a {
+      color: var(--crimson);
+      text-decoration: none;
+      font-size: 13.5px;
+      font-weight: 400;
+      transition: color 0.15s;
+    }
+    .toc a:hover { color: var(--crimson-lt); text-decoration: underline; }
+
+    .section { margin-top: 52px; }
+    .section-number {
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--crimson);
+      display: block;
+      margin-bottom: 6px;
+    }
+    .section h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 1.2;
+      color: var(--ink);
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    .section p {
+      color: var(--stone);
+      margin-bottom: 14px;
+    }
+    .section p:last-child { margin-bottom: 0; }
+
+    .highlight-box {
+      margin: 20px 0;
+      padding: 20px 24px;
+      background: var(--warm-white);
+      border: 1px solid var(--rule);
+      border-radius: 6px;
+    }
+    .highlight-box p { margin-bottom: 10px; }
+    .highlight-box p:last-child { margin-bottom: 0; }
+    .highlight-box strong { font-weight: 500; color: var(--ink); }
+
+    .policy-list {
+      list-style: none;
+      padding: 0;
+      margin: 14px 0;
+    }
+    .policy-list li {
+      display: flex;
+      gap: 12px;
+      color: var(--stone);
+      margin-bottom: 10px;
+      align-items: flex-start;
+    }
+    .policy-list li::before {
+      content: '—';
+      color: var(--crimson);
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .contact-block {
+      margin-top: 20px;
+      padding: 24px 28px;
+      background: var(--warm-white);
+      border: 1px solid var(--rule);
+      border-radius: 6px;
+    }
+    .contact-block p { margin-bottom: 6px; }
+    .contact-block a { color: var(--crimson); text-decoration: none; }
+    .contact-block a:hover { text-decoration: underline; }
+
+    .nav-link {
+      display: inline-block;
+      margin-top: 44px;
+      font-size: 13px;
+      color: var(--crimson);
+      text-decoration: none;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 2px;
+    }
+    .nav-link:hover { border-color: var(--crimson); }
+
+    footer {
+      margin-top: 72px;
+      padding: 28px 24px;
+      border-top: 1px solid var(--rule);
+      text-align: center;
+      font-size: 12px;
+      color: var(--ash);
+      letter-spacing: 0.03em;
+    }
+
+    @media (max-width: 520px) {
+      header { padding: 36px 24px 32px; }
+      .toc { padding: 22px 20px; }
+      .contact-block { padding: 20px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-eyebrow">Legal &amp; Compliance</div>
+    <h1>Privacy Policy</h1>
+    <p class="header-meta">Jackson Kesecker &nbsp;·&nbsp; Effective Date: June 8, 2026 &nbsp;·&nbsp; Last Updated: June 8, 2026</p>
+  </header>
+
+  <div class="page-shell">
+
+    <a class="nav-link" href="terms.html">Terms &amp; Conditions →</a>
+
+    <nav class="toc" aria-label="Table of contents">
+      <p class="toc-label">Contents</p>
+      <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#information-collected">Information We Collect</a></li>
+        <li><a href="#sms-consent">SMS Messaging &amp; Consent</a></li>
+        <li><a href="#how-we-use">How We Use Your Information</a></li>
+        <li><a href="#sharing">Sharing of Information</a></li>
+        <li><a href="#data-retention">Data Retention</a></li>
+        <li><a href="#your-rights">Your Rights</a></li>
+        <li><a href="#security">Security</a></li>
+        <li><a href="#california">California Privacy Rights (CCPA)</a></li>
+        <li><a href="#changes">Changes to This Policy</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ol>
+    </nav>
+
+    <!-- 1 -->
+    <div class="section" id="overview">
+      <span class="section-number">Section 01</span>
+      <h2>Overview</h2>
+      <p>This Privacy Policy describes how Jackson Kesecker ("I," "me," or "my"), a licensed California real estate salesperson (DRE #02196405) affiliated with Keller Williams Coastal Estates &amp; Salinas Valley Estates in Monterey County, California, collects, uses, and protects your personal information — including when you opt in to receive SMS text messages from me.</p>
+      <p>By submitting your information through my opt-in forms or otherwise engaging with my services, you agree to the terms of this Privacy Policy.</p>
+    </div>
+
+    <!-- 2 -->
+    <div class="section" id="information-collected">
+      <span class="section-number">Section 02</span>
+      <h2>Information We Collect</h2>
+      <p>I collect personal information that you voluntarily provide, which may include:</p>
+      <ul class="policy-list">
+        <li>Full name</li>
+        <li>Mobile phone number</li>
+        <li>Email address</li>
+        <li>Property interests, search criteria, or transaction details you share with me</li>
+        <li>Communications you send via text, email, or phone</li>
+      </ul>
+      <p>I do not collect sensitive personal information such as Social Security numbers, financial account credentials, or health data through standard communications.</p>
+    </div>
+
+    <!-- 3 -->
+    <div class="section" id="sms-consent">
+      <span class="section-number">Section 03</span>
+      <h2>SMS Messaging &amp; Consent</h2>
+      <div class="highlight-box">
+        <p><strong>Opt-In:</strong> By submitting your phone number and checking the consent box on my opt-in form, you expressly consent to receive SMS text messages from Jackson Kesecker. Your consent is not a condition of any purchase or service.</p>
+        <p><strong>Message Types:</strong> Messages may include appointment reminders, property updates, open house notifications, market information, and follow-up communications related to your real estate needs.</p>
+        <p><strong>Message Frequency:</strong> Message frequency will vary based on your activity and preferences. You may receive up to several messages per week.</p>
+        <p><strong>Message &amp; Data Rates:</strong> Standard message and data rates may apply depending on your mobile carrier plan.</p>
+      </div>
+      <p><strong>Opt-Out:</strong> You may opt out of SMS messages at any time by replying <strong>STOP</strong> to any message you receive. After opting out, you will receive a single confirmation message and no further SMS messages will be sent unless you re-enroll.</p>
+      <p><strong>Help:</strong> Reply <strong>HELP</strong> to any message for assistance, or contact me directly using the information in Section 11.</p>
+      <p>I do not share your mobile phone number or SMS consent with third parties for their own marketing purposes. Information entered on my opt-in form is used solely for the purposes described in this policy.</p>
+    </div>
+
+    <!-- 4 -->
+    <div class="section" id="how-we-use">
+      <span class="section-number">Section 04</span>
+      <h2>How We Use Your Information</h2>
+      <p>I use the information I collect to:</p>
+      <ul class="policy-list">
+        <li>Send SMS communications you have consented to receive</li>
+        <li>Schedule and confirm real estate appointments and showings</li>
+        <li>Share property listings, market updates, and open house information relevant to your interests</li>
+        <li>Follow up on inquiries and maintain our client relationship</li>
+        <li>Comply with legal and regulatory obligations</li>
+        <li>Improve communications and services</li>
+      </ul>
+    </div>
+
+    <!-- 5 -->
+    <div class="section" id="sharing">
+      <span class="section-number">Section 05</span>
+      <h2>Sharing of Information</h2>
+      <p>I do not sell, rent, or trade your personal information to third parties. I may share your information only in the following limited circumstances:</p>
+      <ul class="policy-list">
+        <li><strong>Service providers:</strong> I use third-party platforms (including Twilio for SMS delivery and Google for form collection and email) that process data on my behalf under appropriate data agreements. These providers are not authorized to use your information for their own purposes.</li>
+        <li><strong>Legal requirements:</strong> I may disclose information if required by law, court order, or government authority.</li>
+        <li><strong>Business transactions:</strong> In the event of a sale or transfer of my business, your information may be transferred as part of that transaction.</li>
+        <li><strong>With your consent:</strong> I may share information in other ways with your explicit permission.</li>
+      </ul>
+      <p>No mobile information will be shared with third parties or affiliates for marketing or promotional purposes.</p>
+    </div>
+
+    <!-- 6 -->
+    <div class="section" id="data-retention">
+      <span class="section-number">Section 06</span>
+      <h2>Data Retention</h2>
+      <p>I retain your personal information for as long as necessary to provide services, maintain business records, and comply with legal obligations. Opt-in records and consent documentation are retained for a minimum of five years to satisfy compliance requirements.</p>
+      <p>If you opt out of SMS communications, your phone number is flagged to suppress future messages. A record of your opt-out will be retained to honor your request.</p>
+    </div>
+
+    <!-- 7 -->
+    <div class="section" id="your-rights">
+      <span class="section-number">Section 07</span>
+      <h2>Your Rights</h2>
+      <p>You have the right to:</p>
+      <ul class="policy-list">
+        <li>Opt out of SMS messages at any time by replying STOP</li>
+        <li>Request access to the personal information I hold about you</li>
+        <li>Request correction of inaccurate information</li>
+        <li>Request deletion of your personal information, subject to legal retention requirements</li>
+      </ul>
+      <p>To exercise any of these rights, contact me using the information in Section 11.</p>
+    </div>
+
+    <!-- 8 -->
+    <div class="section" id="security">
+      <span class="section-number">Section 08</span>
+      <h2>Security</h2>
+      <p>I take reasonable measures to protect your personal information from unauthorized access, disclosure, alteration, or destruction. However, no method of electronic transmission or storage is 100% secure, and absolute security cannot be guaranteed.</p>
+    </div>
+
+    <!-- 9 -->
+    <div class="section" id="california">
+      <span class="section-number">Section 09</span>
+      <h2>California Privacy Rights (CCPA)</h2>
+      <p>As a California-based business, I comply with the California Consumer Privacy Act (CCPA). California residents have the right to:</p>
+      <ul class="policy-list">
+        <li>Know what personal information is collected and how it is used</li>
+        <li>Request deletion of personal information</li>
+        <li>Opt out of the sale of personal information (I do not sell personal information)</li>
+        <li>Non-discrimination for exercising their privacy rights</li>
+      </ul>
+      <p>To submit a CCPA request, contact me at the information provided in Section 11. I will respond within 45 days.</p>
+    </div>
+
+    <!-- 10 -->
+    <div class="section" id="changes">
+      <span class="section-number">Section 10</span>
+      <h2>Changes to This Policy</h2>
+      <p>I may update this Privacy Policy from time to time. When material changes are made, the "Last Updated" date at the top of this page will be revised. Continued use of my services or SMS program after any changes constitutes your acceptance of the updated policy.</p>
+    </div>
+
+    <!-- 11 -->
+    <div class="section" id="contact">
+      <span class="section-number">Section 11</span>
+      <h2>Contact Us</h2>
+      <p>If you have questions about this Privacy Policy, wish to exercise your rights, or need assistance with my SMS program, please reach out:</p>
+      <div class="contact-block">
+        <p><strong>Jackson Kesecker</strong></p>
+        <p>Licensed California Real Estate Salesperson, DRE #02196405</p>
+        <p>Keller Williams Coastal Estates &amp; Salinas Valley Estates</p>
+        <p>Monterey County, California</p>
+        <p style="margin-top:12px;">Phone: <a href="tel:+18318210398">(831) 821-0398</a></p>
+        <p>Email: <a href="mailto:jkesecker@kw.com">jkesecker@kw.com</a></p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2026 Jackson Kesecker. All rights reserved.
+    &nbsp;·&nbsp; DRE #02196405
+    &nbsp;·&nbsp; Keller Williams Coastal Estates &amp; Salinas Valley Estates
+  </footer>
+
+</body>
+</html>
